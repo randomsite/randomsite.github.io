@@ -60,8 +60,8 @@ drone.on('error', error => {
 
 function getRandomName() {
   const adjs = ["randomsite"];
-  const nouns = ["waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning", "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter", "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook", "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly", "feather", "grass", "haze", "mountain", "night", "pond", "darkness", "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder", "violet", "water", "wildflower", "wave", "water", "resonance", "sun", "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper", "frog", "smoke", "star"];
-  return (
+  const nouns = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"
+    return (
     adjs[Math.floor(Math.random() * adjs.length)] +
     "_" +
     nouns[Math.floor(Math.random() * nouns.length)]
