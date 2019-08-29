@@ -63,7 +63,7 @@ function getRandomName() {
   const nouns = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"];
   var min=1; 
   var max=2000;  
-  var random = Math.random() * (+max - +min) + +min;
+  var random = Math.floor(Math.random() * (+max - +min) + +min);
     return (
     adjs[Math.floor(Math.random() * adjs.length)] +
     "_" + random
