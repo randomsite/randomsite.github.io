@@ -65,7 +65,7 @@ function getRandomName() {
   var random = Math.random() * (+max - +min) + +min;
     return (
     adjs[Math.floor(Math.random() * adjs.length)] +
-    "_" + Math.floor(random)
+    "_" + random
     // remove variable random if it doesnt work, like concatenation
      
   );
