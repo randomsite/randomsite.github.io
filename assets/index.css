@@ -38,12 +38,12 @@ li a:hover {
   color: #987;
 }
 
-li.active {
+a.active {
   background-color: gray;
     color: #FFFFFF;
 }
 
-li.active:hover{
+a.active:hover{
   background-color: black;
   }
 
