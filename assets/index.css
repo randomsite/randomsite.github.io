@@ -32,7 +32,7 @@ li.nav a {
   text-decoration: none;
 }
 
-li a:hover {
+li.nav a:hover {
   background-color: white;
   color: #987;
 }
@@ -45,6 +45,15 @@ a.active {
 a.active:hover{
   background-color: #EEE;
   }
+
+a {
+    colour: blue;
+}
+
+a:hover {
+    colour: purple;
+    text-decoration: none;
+}
 
 .dropbtn {
   background-color: black;
