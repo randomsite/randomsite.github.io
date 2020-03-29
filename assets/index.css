@@ -5,14 +5,6 @@ p {
     font-family: 'Staatliches', serif;
 }
 
-div.body {
-    border: 2px ridged #222222;
-    background-color: #AAAAAA;
-    text-align: center;
-    margin: 25px auto;
-    padding: 20px;
-}
-
 ul, a , h4 {
     font-family: 'Rasa', serif;
 }
