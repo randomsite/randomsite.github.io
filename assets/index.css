@@ -5,10 +5,11 @@ p {
     font-family: 'Staatliches', serif;
 }
 
-ul, ul.nav, a , h4 {
+ul, a , h4 {
     font-family: 'Rasa', serif;
 }
 ul.nav {
+  font-family: 'Rasa', sans-serif;
   list-style-type: none;
   margin: 0 0 0 0;
   padding: 0;
@@ -37,12 +38,12 @@ li a:hover {
   color: #987;
 }
 
-.active {
+li.active {
   background-color: gray;
-    color: white;
+    color: #FFFFFF;
 }
 
-.active:hover{
+li.active:hover{
   background-color: black;
   }
 
