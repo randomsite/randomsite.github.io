@@ -38,12 +38,12 @@ li a:hover {
 }
 
 a.active {
-  background-color: #EEE;
+  background-color: black;
     color: #FFF;
 }
 
 a.active:hover{
-  background-color: black;
+  background-color: #EEE;
   }
 
 .dropbtn {
