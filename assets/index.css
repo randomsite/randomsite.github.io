@@ -82,4 +82,8 @@ a:hover {
 
 .dropdown:hover .dropbtn {background-color: black;}
 
+body {
+  background: #bfbfbf url("randomsite.png") no-repeat fixed;
+}
+
 
