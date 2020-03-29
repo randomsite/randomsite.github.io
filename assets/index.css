@@ -8,7 +8,42 @@ p {
 ul, a , h4 {
     font-family: 'Rasa', serif;
 }
+ul.nav {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
 
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: inline-block;
+  color: #987;
+  text-align: center;
+  padding: 28px 32px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  color: #987;
+}
+
+.active {
+  background-color: gray;
+}
+
+.active:hover{
+  background-color: black;
+  }
 
 
 
