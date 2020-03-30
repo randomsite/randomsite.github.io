@@ -73,10 +73,11 @@ a:hover {
 
 .dropdown-content a {
   color: white;
-    width: 250px;
+    width: 200px;
   padding: none;
   text-decoration: none;
   display: block;
+    align: left;
 }
 
 .dropdown-content a:hover {background-color: #333;}
