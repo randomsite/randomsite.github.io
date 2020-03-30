@@ -24,6 +24,10 @@ li.nav {
   float: left;
 }
 
+li.search {
+    float: right;
+}
+
 li.nav a {
   display: inline-block;
   color: #987;
