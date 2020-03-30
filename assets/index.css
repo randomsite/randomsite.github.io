@@ -67,7 +67,7 @@ a:hover {
   display: none;
   position: absolute;
   background-color: black;
-  min-width: 160px;
+  min-width: 120px;
   z-index: 1;
 }
 
