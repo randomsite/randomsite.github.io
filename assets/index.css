@@ -28,6 +28,10 @@ li.search {
     float: right;
 }
 
+li.search a {
+    text-align: right;
+}
+
 li.nav a {
   display: inline-block;
   color: #987;
