@@ -26,6 +26,7 @@ li.nav {
 
 li.search {
     float: right;
+    top-margin: 10px;
 }
 
 li.search a {
