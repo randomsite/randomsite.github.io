@@ -28,7 +28,7 @@ li.nav a {
   display: inline-block;
   color: #987;
   text-align: center;
-  padding: 28px 32px;
+  padding: 16px 32px;
   text-decoration: none;
   font-family: 'Staatliches', serif;  
 }
@@ -59,7 +59,7 @@ a:hover {
 
 .dropbtn {
   background-color: black;
-  font-size: 12px;
+  font-size: 16px;
   border: none;
 }
 
@@ -73,7 +73,7 @@ a:hover {
 
 .dropdown-content a {
   color: white;
-  padding: 04px 06px;
+  padding: none;
   text-decoration: none;
   display: block;
 }
