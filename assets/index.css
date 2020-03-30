@@ -48,14 +48,15 @@ a.active:hover{
   background-color: #EEE;
   }
 
-a, a:visited {
-    colour: 00F;
-}
-
 a:hover {
-    colour: purple;
+    colour: blue;
     text-decoration: none;
 }
+
+a, a:visited {
+    colour: purple;
+}
+
 
 .dropbtn {
   background-color: black;
