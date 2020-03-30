@@ -67,12 +67,13 @@ a:hover {
   display: none;
   position: absolute;
   background-color: black;
-  width: 300px;
+  min-width: 120px;
   z-index: 1;
 }
 
 .dropdown-content a {
   color: white;
+    width: 250px;
   padding: none;
   text-decoration: none;
   display: block;
