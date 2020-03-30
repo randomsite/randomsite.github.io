@@ -20,6 +20,7 @@ function myFunction() {
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "block";
+          li[i].style.visibility = "visible";
         } else {
             li[i].style.display = "none";
         }
@@ -46,7 +47,7 @@ function myFunction() {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: none;
+  visibility: hidden;
 }
 
 #myUL li a {
@@ -125,7 +126,22 @@ h2 {
   </li>
 <li class="nav"><a href="/chat/chat.html">Randomsite Chat System</a></li>
   <li class="nav"><a href = "tournaments.html">Tournaments</a></li>
-  <li class="nav">
+ </ul>
+<hr width="100%" noshade>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <i>
+<font size ="2">
+<p id="date"></p>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+</font>
+</i>
+<!--Webpage.JS code above-->
+</font>
+<hr width="100%" noshade >
+
+<!--Please delete the break tags and add revisions-->
   <input type="text" id="myInput" onkeyup="myFunction()" title="search">
 
 <ul id="myUL">
@@ -152,25 +168,6 @@ h2 {
   <li><a href="/chat/chat.html">Chat</a></li>
   <li><a href="/tournaments.html">Tournaments</a></li>
 </ul>
-  </li>
-</ul>
-<hr width="100%" noshade>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <i>
-<font size ="2">
-<p id="date"></p>
-<script>
-document.getElementById("date").innerHTML = Date();
-</script>
-</font>
-</i>
-<!--Webpage.JS code above-->
-</font>
-<hr width="100%" noshade >
-
-<!--Please delete the break tags and add revisions-->
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="body">
 <p>Randomsite is a Collaborative project by Kl-77,fisik-yum, United Geekdom and others.</p>
 <br>
