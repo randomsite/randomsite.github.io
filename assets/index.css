@@ -74,8 +74,8 @@ a, a:visited {
 
 .dropdown-content a {
   color: white;
-    width: 160px;
-  padding: none;
+    width: 200px;
+  padding: 10px;
   text-decoration: none;
   display: block;
 }
