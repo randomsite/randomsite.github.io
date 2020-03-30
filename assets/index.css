@@ -24,15 +24,6 @@ li.nav {
   float: left;
 }
 
-li.search {
-    float: right;
-    top-margin: 10px;
-}
-
-li.search a {
-    text-align: right;
-}
-
 li.nav a {
   display: inline-block;
   color: #987;
@@ -83,7 +74,7 @@ a, a:visited {
 
 .dropdown-content a {
   color: white;
-    width: 120px;
+    width: 160px;
   padding: none;
   text-decoration: none;
   display: block;
