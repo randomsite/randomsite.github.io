@@ -48,7 +48,7 @@ a.active:hover{
   background-color: #EEE;
   }
 
-a {
+a, a:visited {
     colour: blue;
 }
 
