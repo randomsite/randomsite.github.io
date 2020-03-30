@@ -77,7 +77,7 @@ a:hover {
   padding: none;
   text-decoration: none;
   display: block;
-    align: left;
+    text-align: left;
 }
 
 .dropdown-content a:hover {background-color: #333;}
