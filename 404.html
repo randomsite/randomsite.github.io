@@ -1,10 +1,109 @@
-<!--This is the 404 page-->
-<DOCTYPE html!>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Error</title>
+  <link rel="stylesheet" href="assets/index.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+          li[i].style.visibility = "visible";
+        } else {
+            li[i].style.display = "none";
+          li[i].style.visibility = "invisible";
+        }
+    }
+}
+</script>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('https://w3schools.com/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  visibility: hidden;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: none;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+  
+</style>
 </head>
 <body>
-<a style="text-align: center;" href="https://randomsite.github.io">Go to front page</a>
+
+<h2>404 error</h2>
+  <div class="body">
+    <p>Oops! This page does not appear to exist! Go back <a href="index.html">home</a>, or search for your page below.</p>
+  </div>
+
+<input type="text" id="myInput" onkeyup="myFunction()" title="search">
+
+<ul id="myUL">
+  <li><a href="/index.html">Home</a></li>
+  <li><a href="/credits.html">Credits</a></li>
+
+  <li><a href="/python/python_website.html">Python turtle programs</a></li>
+  <li><a href="/python/password.htm">Python password generator</a></li>
+
+  <li><a href="/python/Cuboid%20Sketcher.html">Python cuboid sketcher</a></li>
+  <li><a href="/python/htmlwriter.html">Python HTML writer</a></li>
+  <li><a href="/misc/timetable-8c.html">8C timetable</a></li>
+  
+  <li><a href="/misc/activity_studio.htm">Activity Studio</a></li>
+  <li><a href="/misc/dinosaur/Dinosaur_Classification_Lists.html">Dinosaur classification list</a></li>
+
+  <li><a href="/misc/aummk.html">AUMMK Home</a></li>
+  <li><a href="/misc/CrazyMaze.html">Crazy Maze</a></li>
+
+  <li><a href="//misc/rgbcolorsliders.html">RGB colour sliders</a></li>
+  <li><a href="/misc/taw.html">The annoying webpage</a></li>
+  <li><a href="/philosoraptor/philosoraptor.html">The philosophoraptor clan</a></li>
+  
+  <li><a href="/chat/chat.html">Chat</a></li>
+  <li><a href="/tournaments.html">Tournaments</a></li>
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo5vN8WgmDhWekKLNl3JuXie9yhrhMDqlnWZJQrSW8_8amOA/viewform?vc=0&c=0&w=1">Quiz 1</a></li>
+  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfuR0ny97S6xef27Y6OyxU38TTkS78G8iMLKFvhYcTH4S4WzQ/viewform?vc=0&c=0&w=1">Quiz 2</a></li>
+  <li><a href="https://united-geekdom.github.io">Contributors: United Geekdom</a></li>
+  <li><a href="https://fisik-yum.github.io">Contributors: fisik_yum</a></li>
+  <li><a href="https://github.com/kl-77">Contributors: kl-77</a></li>
+  <li><a href="https://kl-77.github.io/theropod_encyclopedia.github.io/">Other Works: Theropod Encyclopedia</a></li>
+   <li><a href="https://penfightersassociation.github.io">Other Works: Pen Fighters Association</a></li>
+   <li><a href="https://htmlwriter.github.io/">Other Works: HTML Writer</a></li>
+</ul>
+
 </body>
 </html>
