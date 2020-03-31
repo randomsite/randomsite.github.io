@@ -2,7 +2,27 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+          li[i].style.visibility = "visible";
+        } else {
+            li[i].style.display = "none";
+          li[i].style.visibility = "invisible";
+        }
+    }
+}
+</script>
+  <style>
 * {
   box-sizing: border-box;
 }
@@ -33,7 +53,7 @@
   text-decoration: none;
   font-size: 18px;
   color: black;
-  display: block
+  display: none;
 }
 
 #myUL li a:hover:not(.header) {
@@ -74,29 +94,12 @@ h2 {
   
   <li><a href="/chat/chat.html">Chat</a></li>
   <li><a href="/tournaments.html">Tournaments</a></li>
-
+<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeo5vN8WgmDhWekKLNl3JuXie9yhrhMDqlnWZJQrSW8_8amOA/viewform?vc=0&c=0&w=1">Quiz 1</a></li>
+  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfuR0ny97S6xef27Y6OyxU38TTkS78G8iMLKFvhYcTH4S4WzQ/viewform?vc=0&c=0&w=1">Quiz 2</a></li>
+  <li><a href="https://united-geekdom.github.io">Contributors: United Geekdom</a></li>
+  <li><a href="https://fisik-yum.github.io">Contributors: fisik_yum</a></li>
+  <li><a href="https://kl-77.github.io/theropod_encyclopedia.github.io/">Contributors: kl-77</a></li>
 </ul>
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-            li[i].style.visibility = "visible";
-        } else {
-            li[i].style.display = "none";
-            li[i].style.visibility = "hidden";
-        }
-    }
-}
-</script>
 
 </body>
 </html>
