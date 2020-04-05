@@ -6,3 +6,7 @@ bright {
 background-color: blue;
 color: yellow;
 }
+freeze {
+position: fixed;
+top: 0; 
+}
