@@ -91,7 +91,7 @@ h2 {
   }
   </style>
 </head>
-<body class="page_bg" bgcolor="#bfbfbf">
+<body class="page_bg" bgcolor="#bfbfbf" onload="setInterval(date, 1000)">
 
 <ul class="nav">
   <li class="nav"><a class="active">Home</a></li>
@@ -165,7 +165,9 @@ h2 {
 <font size ="2">
 <p id="date"></p>
 <script>
+  function date() {
 document.getElementById("date").innerHTML = Date();
+  }
 </script>
 </font>
 </i>
