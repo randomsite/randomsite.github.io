@@ -36,7 +36,7 @@ li.nav a {
 li.nav a:hover {
   background-color: white;
   color: #987;
-    transition: 0.6s;
+    transition: 0.35s;
 }
 
 a.active {
@@ -47,7 +47,7 @@ a.active {
 
 a.active:hover{
   background-color: #EEE;
-    transition: 0.6s;
+    transition: 0.35s;
   }
 
 a:hover {
