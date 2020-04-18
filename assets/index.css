@@ -84,7 +84,7 @@ a, a:visited {
 
 .dropdown-content a:hover {background-color: #333;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: block; transition:0.35s;}
 
 .dropdown:hover .dropbtn {background-color: black;}
 
