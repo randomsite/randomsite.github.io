@@ -1,14 +1,18 @@
 <html>
-<head><title>People and blogs</title></head>
-<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Rasa&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/index.css">
-<body leftmargin="40">
-<h1>TPeople and blogs</h1>
-<ul>
-<li><a href="https://sites.google.com/view/get-rid-of-earphones">Earphone dangers</a>
-<!--DO NOT EDIT-->
+<head><title>Index of Python Items</title>
+  <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rasa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/index.css">
+  <link rel="shortcut icon" href="/static/idleicon.png">
+</head>
+<body>
+  <h1>People and Blogs</h1>
+  <body leftmargin="40">
+    <ul><font size="4"></h4>
+      <li><a href="https://sites.google.com/view/get-rid-of-earphones">People and Blogs</a></li>
+      </font></ul></h4>
+   <!--DO NOT EDIT-->
 <font size=2>
 <hr>
 <p align="center"><i>
@@ -17,3 +21,5 @@ Viewers can submit revisions of this site to the administrator for later use.
 <br>This site does not contain copyrighted material.</p>
 </i></font>
 <h5 align="center"><a href="https://randomsite.github.io">Home</a></h5>
+  </body>
+</html>
