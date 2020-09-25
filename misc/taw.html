@@ -14,14 +14,13 @@ Viewers can submit revisions of this site to the administrator for later use.
     alert("hello!")
     wait(1000)
 }
-setInterval( function () {
-        var options = {
- body: 'Spam notification to annoy you lol',
- data: 'RandomSite',
- icon: '/favicon.ico'
-};
-new Notification('Annoying WebPage', options);
-}, 10);
+function crash() {
+var x = 'crash';
+document.body.innerHTML += x;
+}
+for (var i = 0; i < 10; i--) {
+setInterval(crash, 1);
+}
 </script>
 
 </body></html>
