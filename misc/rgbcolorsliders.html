@@ -91,7 +91,9 @@ b.addEventListener('input', function() {
 }, false);
 </script>
 </head>
-<body>
+<body onload="genHeader()">
+  <script src="/directory.js"></script>
+  <p id="header"></p>
 <fieldset>
   <label for="r">R</label>
   <input type="range" min="0" max="255" id="r" step="1" value="0">
