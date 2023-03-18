@@ -15,5 +15,6 @@ function genHeader() {
         }
     }
     header.innerHTML += "<hr>"
+    header.style.width = "100%"
 }
      

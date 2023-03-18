@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calvin and Hobbes font</title>
+    <style>
+        img.letter{
+            float: left;
+            margin:0;
+            height:18px;
+            width: auto;
+        }
+        p.space {
+            float:left;
+        }
+        .section {
+            float:left;
+            margin:10px;
+        }
+        #output {
+            float: none;
+            clear:both;
+            margin: 10px;
+        }
+        .wrapper {
+            background-color: white;
+            display: inline-block;
+            padding: 15px 15px 30px 15px;
+            margin: 15px;
+        }
+        body {
+            background-color: #f3edbc;
+            
+        }
+        img.banner {
+            width: 33.333333%;
+            height: auto;
+        }
+        div.banner {
+            width: 100%;
+            float: none;
+            margin:0;
+        }
+    </style>
+</head>
+<body onload="genHeader()">
+    <script src="/directory.js"></script>
+    <p id="header"></p>
+    <div class="banner"><img class="banner" src="banner.jpg" alt=""><img class="banner" src="banner.jpg" alt=""><img class="banner" src="banner.jpg" alt=""></div>
+    <br><br><br><br><br><br>
+    <div class="wrapper">
+        <img src="header.jpg" alt=""><br>
+    <div class="section"><textarea name="" id="script" cols="50" rows="6"></textarea></div>
+    <div class="section">
+        <input type="radio" name="face" id="" value="normaltxt"><label>Normal font</label><br>
+        <input type="radio" name="face" id="" value="boldtxt"><label>Bold font</label><br>
+        <input type="radio" name="face" id="" value="moetxt"><label>Moe's font</label><br>
+        <br><button onclick="font()">Generate</button>
+    </div>
+    <br><br>
+    <div id="output"></div>
+    </div>
+
+    <script>
+        function font(){
+            var txt = document.getElementById("script").value;
+            txt = txt.split("");
+            for(var i = 0; i < document.getElementsByName("face").length; i++) {
+                if(document.getElementsByName("face")[i].checked){
+                    var path = document.getElementsByName("face")[i].value + "/";
+                }
+            }
+            document.getElementById("output").innerHTML = ""
+            for(var i = 0; i < txt.length;i++) {
+                if(txt[i] == "."){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "fullstop.jpg'></img>"
+                } else if(txt[i] == ","){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "comma.jpg'></img>"
+                } else if(txt[i] == "!"){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "exclamation.jpg'></img>"
+                } else if(txt[i] == "?"){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "question.jpg'></img>"
+                } else if(txt[i] == "-"){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "hyphen.jpg'></img>"
+                } else if(txt[i] == "'"){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "apostrophe.jpg'></img>"
+                } else if(txt[i] == '"'){
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + "quote.jpg'></img>"
+                } else if(txt[i] == " "){
+                    document.getElementById("output").innerHTML += "<p class='space'>&nbsp&nbsp</p>"
+                } else {
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + txt[i] +".jpg'></img>"
+                }
+            }
+        }
+    </script>
+      <!--DO NOT EDIT-->
+    <font size=2>
+    <hr>
+    <p align="center"><i>
+    This site is under development at&nbsp;<a href="https://github.com/randomsite/randomsite.github.io">Github</a>
+    <br>All data on this site is free.
+    Viewers can submit revisions of this site to the administrator for later use.
+    <br>This site does not contain copyrighted material.</p>
+    </i></font>
+    <h5 align="center"><a href="https://randomsite.github.io">Home</a></h5>
+</body>
+</html>
