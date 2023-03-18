@@ -90,7 +90,7 @@
                 } else if(txt[i] == " "){
                     document.getElementById("output").innerHTML += "<p class='space'>&nbsp&nbsp</p>"
                 } else {
-                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + txt[i] +".jpg'></img>"
+                    document.getElementById("output").innerHTML += "<img class='letter' src='" + path + txt[i].toUpperCase() +".jpg'></img>"
                 }
             }
         }
